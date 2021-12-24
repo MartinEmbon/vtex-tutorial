@@ -1,0 +1,30 @@
+.paragraph--text__top-bar{
+    font-size: 13px;
+    color:#fff;
+    justify-content: center;
+    font-family: 'Roboto', Courier, monospace;
+}
+
+/*.container--text__top-bar{
+    justify-content: center;
+}
+*/
+
+.wrapper--text__top-bar{
+    display:flex;
+    align-items:center;
+    height:44px;
+}
+
+.wrapper--email__top-bar,
+.wrapper--text__top-bar{
+    margin-right:30px;
+}
+
+.wrapper--cart__top-bar {
+    margin-right:0;
+}
+
+.paragraph--text__top-bar {
+    margin:0;
+}

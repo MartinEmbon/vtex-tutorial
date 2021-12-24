@@ -1,0 +1,34 @@
+{
+    "responsive-layout.desktop#home": {
+        "children":["list-context.image-list#banner"]
+    },
+    "list-context.image-list#banner":{
+        "children":["slider-layout#banner"],
+        "props":{
+            "height":764,
+            "images":[
+                {
+                    "image":"assets/images/mario-banner.jpg",
+                    "mobileImage":""
+                },
+                {
+                    "image":"assets/images/mario-banner.jpg",
+                    "mobileImage":""
+                }
+            ]
+        }
+    },
+    "slider-layout#banner":{
+        "props":{
+            "itemsPerPage":{
+                "desktop":1,
+                "tablet":1,
+                "phone":1
+            },
+            "infinite":false,
+            "showNavigationArrows":"never",
+            "showPaginationDots":"always"
+            
+        }
+    }
+}

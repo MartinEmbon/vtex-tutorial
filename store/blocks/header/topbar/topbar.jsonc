@@ -1,0 +1,67 @@
+{
+    "flex-layout.row#top-bar":{
+        "props":{
+            "blockClass":"wrapper__top-bar",
+            "fullWidth":true,
+            "horizontalAlign":"center"
+        },
+        "children": [
+            "flex-layout.col#left",
+            "flex-layout.col#right"
+        ]
+    },
+
+    "flex-layout.col#left": {
+        "children":[
+            "rich-text#email",
+            "rich-text#phone"
+        ],
+        "props":{
+            "blockClass":["wrapper__col", "wrapper__col-left"]
+        }
+    },
+
+    "flex-layout.col#right": {
+        "children":[
+            "rich-text#login",
+            "rich-text#wish-list",
+            "rich-text#cart"
+        ],
+        "props": {
+            "blockClass":["wrapper__col", "wrapper__col-right"]
+        }        
+    },
+
+    "rich-text#email": {
+        "props": {
+            "blockClass":["text__top-bar", "email__top-bar"],
+           // "text":"![email](assets/images/email.png) loremipsum@gmail.com"
+           "text":"![email](https://via.placeholder.com/14x16) loremipsum@email.com"
+        }
+    },
+    "rich-text#phone": {
+        "props": {
+            "blockClass":["text__top-bar", "phone-bar"],
+            "text":"![phone](https://via.placeholder.com/14x16) +55(14) 000-0000-00"
+        }
+    },
+    "rich-text#login": {
+        "props": {
+            "blockClass":["text__top-bar", "login-bar"],
+            "text":"![login](https://via.placeholder.com/14x16) Login"
+        }
+    },
+    "rich-text#wish-list": {
+        "props": {
+            "blockClass":["text__top-bar", "wish__top-bar"],
+            "text":"![whish-list](https://via.placeholder.com/14x16) Whish-list"
+        }
+    },
+    "rich-text#cart": {
+        "props": {
+            "blockClass":["text__top-bar", "cart__top-bar"],
+            "text":"![whish-list](https://via.placeholder.com/14x16) Carrinho"
+        }
+    }
+
+}
